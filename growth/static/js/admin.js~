@@ -1,0 +1,25 @@
+const image_url = document.querySelector("#id_image_url");
+
+image_url.addEventListener("change", function (e) {
+    const file = fetch(image_url.files[0])
+        .then((res) => res.blob())
+        .then((blob) => {
+            const reader = new FileReader();
+            reader.readAsDataURL(blob);
+            reader.onloadend = function () {
+                const base64data = reader.result;
+                const img = document.createElement("img");
+                img.src = base64data;
+                document.querySelector("#image_preview").innerHTML = "";
+                document.querySelector("#image_preview").appendChild(img);
+            };
+        });
+    reader.onload = function (e) {
+        const img = document.createElement("img");
+        img.src = e.target.result;
+        img.width = "100";
+        img.height = "100";
+        document.querySelector("#image_preview").appendChild(img);
+    };
+    reader.readAsDataURL(file);
+});
