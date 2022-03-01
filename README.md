@@ -9,6 +9,7 @@
 ## If you want to test the application
 ##### username - prabal
 ##### password - prabal
+<i> Paste the url in the image field and tap outside to preview it</i>
 
 ### ✨ [Demo](https://kidgrowth.herokuapp.com)
 
