@@ -6,6 +6,9 @@
 > Kids Growth
 
 ### 🏠 [Homepage](https://kidgrowth.herokuapp.com)
+## If you want to test the application
+##### username - prabal
+##### password - prabal
 
 ### ✨ [Demo](https://kidgrowth.herokuapp.com)
 
