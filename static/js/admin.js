@@ -8,4 +8,8 @@ window.addEventListener("load", () => {
         console.log(e.target.vlue);
         image_field.src = e.target.value;
     });
+
+    const approved_by = document.querySelector("#id_approved_by");
+    console.log("approved by: ", approved_by);
+    approved_by.readOnly = true;
 });
